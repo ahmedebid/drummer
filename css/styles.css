@@ -5,6 +5,9 @@ html {
 }
 
 body,html {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -13,8 +16,10 @@ body,html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
-  align-items: center;
+  flex-wrap: wrap;
+  min-height: 97vh;
+  max-width: 800px;
+  align-content: flex-end;
   justify-content: center;
 }
 
@@ -34,8 +39,8 @@ body,html {
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #fff;
+  box-shadow: 0 0 1rem #fff;
 }
 
 kbd {
@@ -47,5 +52,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #A7C3E8;
 }
